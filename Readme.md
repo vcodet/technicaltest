@@ -1,19 +1,41 @@
-Technical test by VCODET
+# Technical test by VCODET
+## Setup
+* Set database.yml & environment.rb in ./config/ for your own environment (mysql is required)
 
-For the application :
+##  The application :
 
-* Set database.yml & environment.rb in ./config/ for your own environment (mysql required)
+
 * I used RVM for running the application
 * You may need to install new gems
-* $rake db:init (or db:create then db:migrate), check the Rakefile for more informations. The created database has a long name (and customized) for avoiding conflicts (reminder_byVCODET). You can tip "rake db:reset" once the db is initialised and you want to clean it
-* $ruby launch.rb for running the application
+* Run the following command
+```
+* rake db:init
+```
+ 
+* You can type the next command to clean it (once the database is up)
+```
+rake db:reset
+```
+* How to run the application
+```
+ruby launch.rb
+```
 
 
-For the tests:
 
-* I use RVM as well, I did not set a database for test. Better use "rake db:reset" before the tests
+
+## For the tests:
+
+* I use RVM as well for the tests
 * go to path/Reminder/tests/
-* $ruby unit_test_customer.rb
-* $ruby unit_test_reminder.rb
+
+```shell
+$ ruby unit_test_customer.rb
+```
+
+```shell
+$ ruby unit_test_reminder.rb
+```
+
 
 Vincent CODET
