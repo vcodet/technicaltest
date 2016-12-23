@@ -1,4 +1,4 @@
-= Technical test by VCODET
+Technical test by VCODET
 
 For the application :
 
